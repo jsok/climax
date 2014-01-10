@@ -86,6 +86,8 @@ if __name__ == "__main__":
     d.register_task(task_bar)
     d.register_task(task_baz)
 
+    d.create_graph()
+
     for task in d.resolve(task_main):
         print task
 
